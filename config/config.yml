@@ -1,0 +1,18 @@
+# SQL Server Database Configuration
+database:
+  server: sqlservers
+  username: sa
+  password: "123456"
+  database: chengtai
+
+# Table Configuration
+table:
+  name: chengtai
+  primary_key: gid
+  geometry_field: geom
+
+# Geometry Configuration
+geometry:
+  srid: 4326  # 默认使用WGS84坐标系，根据实际情况修改
+  target_point_count: 5  # 目标点数（闭合四边形）
+  collinearity_tolerance: 0.000001  # 共线性判断容差
